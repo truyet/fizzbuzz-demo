@@ -31,3 +31,4 @@ yarn start
 
 Open browser with url `http://localhost:3000/`
 
+Demo video included `demo.mov`
