@@ -1,0 +1,13 @@
+type FizzbuzzRequest {
+	Count int32 `json:"count"`
+}
+
+type FizzbuzzResponse {
+	Status  int32  `json:"status"`
+	Message string `json:"message"`
+}
+
+service fizzbuzz-api {
+	@handler Fizzbuzz
+	post /fizzbuzz (FizzbuzzRequest) returns (FizzbuzzResponse);
+}
